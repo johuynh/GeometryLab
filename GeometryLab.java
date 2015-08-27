@@ -18,7 +18,28 @@ public class GeometryLab {
         return x + y - z;
         }
         public double triArea(double b, double h) {
-            return 1/2 * b * h;
+            return .5 * b * h;
         }
+    public double trapArea(double b1, double b2, double h) {
+            return .5 * h * (b1+b2);
+        }
+    public double rectArea(double b, double h) {
+            return b + h;
+        }
+    public double circArea(double r) {
+            return 3.14 * r * r;
+        }
+    public double paralArea(double b, double h) {
+            return b * h;
+    }
+    public double pythHypotenuse(double a, double b) {
+        return a*a + b*b;
+    }
+    public double triPrismVol (double b, double h, double w) {
+        return .5 * b * h * w;
+    }
+    public double rectPrismVol (double b, double h, double w) {
+        return b * h * w;
+    }
     
-} 
+}
