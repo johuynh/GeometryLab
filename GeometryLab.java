@@ -41,5 +41,25 @@ public class GeometryLab {
     public double rectPrismVol (double b, double h, double w) {
         return b * h * w;
     }
-    
+    public double rectPyramidVol (double b, double h, double w) {
+        return .33 * b * h * w;
+    }
+    public double cylVol (double r, double h) {
+        return 3.14 * r * r * h;
+    }
+    public double sphereVol (double r) {
+        return 1.33 * 3.14 * r * r * r;
+    }
+    public double coneVol (double r, double h) {
+        return .33 * 3.14 * r * r * h;
+    }
+    public double sphereSurfArea (double r) {
+        return 4 * 3.14 * r * r;
+    }
+    public double cylSurfArea (double r, double h) {
+        return 2 * 3.14 * r * h + 2 * 3.14 * r * r;
+    }
+    public double rectPrismSurfArea (double b, double h, double w) {
+        return 2 * b * h + 2 * b * w + 2 * h * w;
+    }
 }
